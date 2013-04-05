@@ -1,3 +1,14 @@
+#
+#write of recipe 
+#
+#buildtool_make_install do
+# srcdir "/usr/local/work/"
+# dstdir "/tmp"
+# file "httpd-2.2.23.tar.gz"
+# configure ["--enable-expires","--enable-headers"]
+#end
+#
+#
 define :buildtool_make_install do
 
   params[:dstdir] = params[:srcdir] if params[:dstdir].nil? 
